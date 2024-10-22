@@ -64,7 +64,7 @@ I downloaded mimikatz, in order to get dump hashes and passwords.
 
 ![image](https://github.com/user-attachments/assets/fdedade4-7fcf-44d6-b612-cfc85708e356)
 
-Cleartext Password:  
+I also found a password in cleartext:  
 ![image](https://github.com/user-attachments/assets/300c1108-6e71-42a8-8ffa-5a3354aeb722)
 
 ## 6\. **(Lateral Movement)**
