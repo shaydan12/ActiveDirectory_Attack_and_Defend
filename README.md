@@ -210,7 +210,7 @@ OriginalFileName="mimikatz.exe" ParentCommandLine="C:\\Windows\\system32\\cmd.ex
 
 &nbsp;
 
-## Registry change
+### Registry change
 
 Creating an alert any time a change to the 'Run' registry occurs
 
