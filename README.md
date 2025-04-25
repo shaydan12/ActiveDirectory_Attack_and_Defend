@@ -8,7 +8,13 @@ Goal: Simulate a cyberattack and then document and analyze the steps involved, h
 
 # Content:
 - [Attack Simulation](#attack-simulation)
-  - [Initial Access] (https://github.com/shaydan12/ActiveDirectory_Attack_and_Defend/blob/main/README.md#1-initial-access)  
+  - [Initial Access](#1-initial-access)
+  - [Persistence](#2-persistence)
+  - [Enumeration](#3-enumeration)
+  - [Privilege Escalation](#4-privilege-escalation)
+  - [Credential Access](#5-credential-access-t1003---credential-dumping)
+  - [Lateral Movement](#6-lateral-movement)
+  - [Data Exfiltration](#7-data-exfiltration)
 - [Analysis and Reporting](#analysis-and-reporting)
 
 &nbsp;
