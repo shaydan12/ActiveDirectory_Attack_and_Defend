@@ -8,6 +8,7 @@ Goal: Simulate a cyberattack and then document and analyze the steps involved, h
 
 # Content:
 - [Attack Simulation](#attack-simulation)
+  - [Initial Access] (https://github.com/shaydan12/ActiveDirectory_Attack_and_Defend/blob/main/README.md#1-initial-access)  
 - [Analysis and Reporting](#analysis-and-reporting)
 
 &nbsp;
