@@ -1,4 +1,11 @@
 
+
+# Description
+
+This project demonstrates a penetration test simulation, mapping out an attack from initial access to data exfiltration within a corporate network environment.
+
+Goal: Simulate a cyberattack and then document and analyze the steps involved, highlighting key attack techniques from the MITRE ATT&CK framework.
+
 # Content:
 - [Attack Simulation](#attack-simulation)
 - [Analysis and Reporting](#analysis-and-reporting)
