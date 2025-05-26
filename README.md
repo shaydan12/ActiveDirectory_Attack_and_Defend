@@ -37,13 +37,13 @@ Then I set up the listener using:  `msfconsole -x "use exploit/multi/handler; s
 - **LHOST (Listening host)**: 192.168.1.59
 - **LPORT (Listening Port)**: 4444
 
-## 1\. **(Initial Access)**
+## 🚪 1\. **(Initial Access)**
 
 I created a basic [shellcode injector](https://github.com/shaydan12/ShellcodeInjector) that will inject shellcode into a specified process. The shellcode created from msfvenom will be placed in there.
 
 Target runs the executable which then executes a meterpreter shell connection to 192.168.1.59 (port 4444), once I gained access I migrated to a different process
 
-## 2\. **(Persistence)**
+## 📌 2\. **(Persistence)**
 
 ### **T1547 - Boot or Logon Autostart Execution**
 
@@ -53,7 +53,7 @@ I gained persistence by adding a new value to the Run key in the registry specif
 
 ![image](https://github.com/user-attachments/assets/ba42f3d2-d39a-41bd-ba41-6862d63e31cd)
 
-## 3\. Enumeration
+## 🔎 3\. Enumeration
 
 ### **T1016 System Network Configuration Discovery**
 
@@ -63,7 +63,7 @@ I looked for other computers on the network using the Get-ADComputer Powershell 
 
 ![image](https://github.com/user-attachments/assets/3a3061e9-2ebe-4fcf-9a6e-b65c1f3803ee)
 
-## 4\. (**Privilege Escalation**):
+## 🚀 4\. (**Privilege Escalation**):
 
 I used the "windows/local/bypassuac_sdclt" module in Metasploit to attempt to elevate my privileges to SYSTEM, the highest privilege on Windows.
 
@@ -72,7 +72,7 @@ I used the "windows/local/bypassuac_sdclt" module in Metasploit to attempt to el
 I then migrated to a process running with SYSTEM privileges in order to perform privilege escalation.  
 ![image](https://github.com/user-attachments/assets/34b63708-c5e8-4fa2-98c0-9008469f0850)
 
-## 5\. (**Credential Access**), (T1003 - Credential Dumping)
+## 🔑 5\. (**Credential Access**), (T1003 - Credential Dumping)
 
 I downloaded mimikatz, in order to get dump hashes and passwords.
 
@@ -81,7 +81,7 @@ I downloaded mimikatz, in order to get dump hashes and passwords.
 I also found a password in cleartext:  
 ![image](https://github.com/user-attachments/assets/300c1108-6e71-42a8-8ffa-5a3354aeb722)
 
-## 6\. **(Lateral Movement)**
+## 🔁 6\. **(Lateral Movement)**
 
 I attempted to move onto the domain controller using credentials I gathered from Mimikatz and the info gathered from Get-ADComputers.
 
@@ -89,7 +89,7 @@ I attempted to move onto the domain controller using credentials I gathered from
 
 &nbsp;
 
-## 7\. **(Data Exfiltration)**
+## 📤📦 7\. **(Data Exfiltration)**
 
 ### **Exfiltration Over Web Service - T1567**
 
